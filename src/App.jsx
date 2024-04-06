@@ -9,6 +9,7 @@ import Login from './Components/Login'
 import Register from './Components/Register'
 import Forces from './Components/Forces'
 import BattalionManagement from './Components/BattalionsManagement'
+import Batallion from './Components/Batallion'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,9 +44,9 @@ function App() {
                 </>
               }/>
 
-              <Route path='/batallion' element={
+              <Route path='/batallion/:batallionId' element={
                 <>
-                  <BattalionManagement/>
+                  <Batallion/>
                 </>
               }/>
 
